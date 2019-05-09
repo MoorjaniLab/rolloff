@@ -6,25 +6,22 @@ ROLLOFF is a method for estimating the time of admixture. Here we provide the im
 
 
 #### Installation
-To make the DATES executable, you will need the following libraries:
-```
-GSL 2.5 (https://www.gnu.org/software/gsl/)
-OpenBLAS 0.2.20 (www.openblas.net)
-FFTW 3.3.8 (http://www.fftw.org/download.html)
-````
-You will need to edit the file ``Makefile`` and change the lines:
-```
-override CFLAGS += -I<PATH_TO_GSL_INCLUDE> -I<PATH_TO_OPENBLAS_INCLUDE> -I<PATH_FFTW_INCLUDE>
-override LDFLAGS += -I<PATH_TO_GSL_LIB> -I<PATH_TO_OPENBLAS_LIB> -I<PATH_FFTW_LIB>
-```
-
-To the appropriate directories containing the include and lib files once you have these libraries installed. Once the makefile is updated, simply run make and then add the executables in the bin to your PATH. 
+We have placed source code for all C executables in the src/ directory, 
+for users who wish to modify and recompile our programs.  For example, to
+recompile the programs, type
 
 ```
-make install
-export PATH=$PATH:<PATH_TO_bin_directory>
+cd src
+make clobber
+make install      
 ```
-Note, the bin directory contains additional executables like jackknife, runexpfit which are needed for the jackknife and so skipping this step will lead to errors.
+
+If you are building on a Mac, you will need gsl and openblas installed. 
+```
+brew install gsl
+brew install homebrew/science/openblas
+Uncomment the lines in src/Makefile that modify the CFLAGS and LDFLAGS. 
+```
 
 #### Input
 DATES requires that the input data is available in one of these formats (See https://reich.hms.harvard.edu/software/InputFileFormats). To convert to the appropriate format, one can use CONVERTF program (See https://github.com/argriffing/eigensoft/tree/master/CONVERTF for details). 
