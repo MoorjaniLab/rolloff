@@ -58,7 +58,7 @@ nochrom:   chromosome_number.     # The specified chromosome is excluded from th
 admixlist: admix_list.            # If you want run ROLLOFF for a list of populations, use flag admixlist to specify a list of populations. There is one population on each line. NOTE: The ancestral populations remain the same.
 badsnpname:    badsnp_list.       # File contains a list of SNPs to be excluded from the analysis. 
 ransample:   random_number.       # Program will run rolloff with a random set (n = random_number) of samples from the admixed population.
-numchrom:	   integer_number       # the count of chromosomes of your organism
+numchrom:	integer_number       # the count of chromosomes of your organism
 ```
 
 #### Output
