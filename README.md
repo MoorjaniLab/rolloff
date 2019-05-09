@@ -35,31 +35,30 @@ $parfile: Name of parameter file.  <br />
 
 #### Parameter file
 ```
-genotypename:   input genotype file (in eigenstrat format)
-snpname:   input snp file      (in eigenstrat format)
-indivname:   input indiv file    (in eigenstrat format)
-poplistname:   rolloff.ref. This file contains the names of the two ancestral populations. There is one population on each line.
-admixlist:   rolloff.target. This file contains the name of the admixed population. There is one population on each line.
-binsize:   binsize (in Morgans). Range is from 0-1. Optimal binsize of 0.001 is recommended.
-maxdis:   maximum_distance (in Morgans). Range is 0-1. For quicker runs, use max_distance < 1.0. However, for recent admixture, ensure that max_distance is greater than the expected admixture LD blocks.
-seed:   rand_num. Random seed to ensure reproducibility of runs. 
-runmode:   1
-chithresh:   chi-square threshold (default: 6.0). 
-zdipcorrmode:  YES. Computes a Pearsons correlation between pair of markers.
-checkmap: YES/NO. Checks if physical positions are correlated to genetic position. Error, if very high correction. 
+genotypename:   input genotype file   # in eigenstrat format
+snpname:   input snp file             # in eigenstrat format
+indivname:   input indiv file         # in eigenstrat format
+poplistname:   rolloff.ref.           # This file contains the names of the two ancestral populations. There is one population on each line.
+admixlist:   rolloff.target.          # This file contains the name of the admixed population. There is one population on each line.
+binsize:   binsize (in Morgans).      # Range is from 0-1. Optimal binsize of 0.001 is recommended.
+maxdis:   maximum_distance (in Morgans). # Range is 0-1. For quicker runs, use max_distance < 1.0. However, for recent admixture, ensure that max_distance is greater than the expected admixture LD blocks.
+seed:   rand_num.                     #Random seed to ensure reproducibility of runs. 
+runmode:   1                          # internal parameter
+chithresh:                            # chi-square threshold (default: 6.0). 
+checkmap: YES/NO.                     # Checks if physical positions are correlated to genetic position. Error, if very high correction. 
 ```
 
 ##### Optional paramaters
 ```
-weightname:   weight_file. Contains a weight for each SNP to be included in the run. If this parameter is not specified, the program uses the allele frequency differentiation between the ancestral populations as the weight for each SNP. 
-mincount:   number. Contains the minimum number of admixed individuals required for the run. Default = 5.
-minparentcount: number. Contains the minimum number of ancestral individuals from each population that is required for the run. Default = 10.
-chrom: chromosome_number. The analysis is limited to the specified chromosome only.
-nochrom:   chromosome_number. The specified chromosome is excluded from the analysis.
-admixlist: admix_list. If you want run ROLLOFF for a list of populations, use flag admixlist to specify a list of populations. There is one population on each line. NOTE: The ancestral populations remain the same.
-badsnpname:    badsnp_list. File contains a list of SNPs to be excluded from the analysis. 
-ransample:   random_number. Program will run rolloff with a random set (n = random_number) of samples from the admixed population.
-numchrom:	the count of chromosomes of your organism
+weightname:   weight_file.        # Contains a weight for each SNP to be included in the run. If this parameter is not specified, the program uses the allele frequency differentiation between the ancestral populations as the weight for each SNP. 
+mincount:   number.               # Contains the minimum number of admixed individuals required for the run. Default = 5.
+minparentcount: number.           # Contains the minimum number of ancestral individuals from each population that is required for the run. Default = 10.
+chrom: chromosome_number.         # The analysis is limited to the specified chromosome only.
+nochrom:   chromosome_number.     # The specified chromosome is excluded from the analysis.
+admixlist: admix_list.            # If you want run ROLLOFF for a list of populations, use flag admixlist to specify a list of populations. There is one population on each line. NOTE: The ancestral populations remain the same.
+badsnpname:    badsnp_list.       # File contains a list of SNPs to be excluded from the analysis. 
+ransample:   random_number.       # Program will run rolloff with a random set (n = random_number) of samples from the admixed population.
+numchrom:	   integer_number       # the count of chromosomes of your organism
 ```
 
 #### Output
