@@ -1,0 +1,44 @@
+
+## rolloff.  Version 625a
+
+Computes:
+
+sum( cov(X,Y) * delta(x)delta(y) ) / sum(delta(x)^2 delta(y)^2)
+
+where the sums are over pairs of sites (x,y) in bin d, cov(X,Y) is
+the sample covariance between random variables X and Y corresponding
+to 0, 1, or 2 allele counts at sites x and y, and delta(x), delta(y)
+are the allele frequency differences between ancestral populations
+which we use as weights.
+The resulting curve should be 2*alpha*beta*exp(-nd).
+
+
+parameter file: parfile
+indivname: example.ind
+snpname: example.snp
+genotypename: example.geno
+poplistname: anc_pop
+admixlist: admix_pop
+binsize: .001
+output: example.out
+maxdis: 1.0
+seed: 77
+runmode: 1
+chithresh: 0.0
+mincount: 1
+zdipcorrmode: YES
+seed: 77
+chithresh:     0.000
+genotypename:  example.geno
+valid snps: 378678
+group 0 Yoruba
+group 1 French
+number admixed: 5 numeg: 2
+numsnps: 378678  numindivs: 54
+raw weight mean:      0.062 num:    373825
+number of snps used:  304322
+starting main loop. numsnps: 373825
+slurmstepd: error: *** JOB 37723166 ON compute-e-16-179 CANCELLED AT 2019-03-28T02:16:51 ***
+num0: 0
+##end of run
+End successfully

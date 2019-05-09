@@ -1,0 +1,18 @@
+Summary of fit:
+
+Formula: wcorr ~ (C + A * exp(-m * dist/100))
+
+Parameters:
+   Estimate Std. Error t value Pr(>|t|)    
+C 2.169e-03  1.367e-04   15.87   <2e-16 ***
+A 2.325e-01  7.618e-04  305.14   <2e-16 ***
+m 1.047e+01  5.295e-02  197.66   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+Residual standard error: 0.003387 on 993 degrees of freedom
+
+Number of iterations to convergence: 1 
+Achieved convergence tolerance: 9.497e-07 
+
+Estimated number of generations since mixture:  10.47 

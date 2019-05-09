@@ -1,0 +1,13 @@
+indivname:    example.ind
+snpname:     example.snp
+genotypename:     example.geno
+poplistname:     anc_pop
+admixlist:      admix_pop
+binsize:      .001
+output:       example.out
+maxdis:       1.0
+seed:         77
+runmode:      1
+chithresh: 0.0
+mincount: 1
+zdipcorrmode: YES
