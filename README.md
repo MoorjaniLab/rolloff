@@ -1,8 +1,7 @@
 # ROLLOFF
 
 
-ROLLOFF is a method for estimating the time of admixture. Here we provide the implementation included in Moorjani et al. 2011 (Reconstructing Roma History from Genome-Wide Data). An earlier version of ROLLOFF was released as part of ADMIXTOOLS and can be downloaded from <a href="https://github.com/DReichLab/AdmixTools"> here </a>. Moorjani et al. 2013 found that the statistic used in earlier paper could be biased under certain conditions. In this implementation, we remove the bias by computing a weighted ancestry covariance. Details can be found in <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0058633">Moorjani et al. 2013</a>. 
-introduced in Moorjani et al. 2011 (https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001373). 
+ROLLOFF is a method for estimating the time of admixture. Here we provide the implementation included in Moorjani et al. 2011 <a  href=https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001373> Reconstructing Roma History from Genome-Wide Data </a>. An earlier version of ROLLOFF was released as part of ADMIXTOOLS and can be downloaded from <a href="https://github.com/DReichLab/AdmixTools"> here </a>. Moorjani et al. 2013 found that the statistic used in earlier paper could be biased under certain conditions. In this implementation, we remove the bias by computing a weighted ancestry covariance. Details can be found in Moorjani et al. 2013. 
 
 
 #### Installation
