@@ -72,5 +72,5 @@ Also read README.ROLLOFF_OUTPUT for fitting an exponential to the output of Roll
 An example run is available in ``src/example/`` directory. 
 
 #### Support
-Send queries to Priya Moorjani (moorjani@berkeley.edu)
+For questions, please email Priya Moorjani (moorjani@berkeley.edu)
 
