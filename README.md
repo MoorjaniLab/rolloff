@@ -9,9 +9,9 @@ for users who wish to modify and recompile our programs.  For example, to
 recompile the programs, type
 
 ```
-cd src
+cd rolloff
 make clobber
-make install      
+make rolloff      
 ```
 
 If you are building on a Mac, you will need gsl and openblas installed. 
